@@ -1,0 +1,195 @@
+body{				/* -------------------------------------------Body*/
+	background: #006fb5;
+	margin:.5em;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#main{				/* -------------------------------------------Main*/
+	margin:0 auto;
+	width: 70%;
+	background: white;
+	padding:.5em 1em 0 1em;
+	box-shadow: 3px 3px 5px #444;
+}
+
+header#mainHeader{	/* -------------------------------------------MainHeader*/
+	width:100%;
+	display: inline-block;
+}
+
+#mainHeader h1{
+	font-size: 2.5em;
+	margin: 0;
+}
+
+#mainHeader h2{
+	color:#006fb5;
+	font-size: 2em;
+	margin: 0;
+}
+
+#mainHeader h3{
+	font-family: "Georgia", Serif;      
+  	font-weight: normal;
+  	font-style: italic;
+  	color: #666;
+}
+
+#idCard{			/* -------------------------------------------idCard*/
+	float:left;
+	width:60%;
+}
+
+#idPic{
+	height:8.75em;
+	float:left;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-right: 1.5em;
+    margin-bottom: 2em;
+}
+
+#social{
+	float:right;
+}
+
+#social ul#icons{			/* -------------------------------------------Social Bar*/			
+	float: right; 			/* -------------------------------------------Social Icons*/
+	display:inline;
+	padding: 0;
+}
+
+#social ul#icons li{
+	display:inline;
+}
+#social ul#icons li img{
+ 	background-position: center top;
+ 	height:28px;
+ 	width:28px;
+ 	border:none;
+}
+#social ul#icons li img:hover{
+ 	background-position: center bottom;
+}
+img.facebook{
+	background-image: url(img/facebook.png);
+}
+img.twitter{
+	background-image: url(img/twitter.png);
+}
+img.googleplus{
+	background-image: url(img/googleplus.png);
+}
+img.github{
+	background-image: url(img/github.png);
+}
+img.linkedin{
+	background-image: url(img/linkedin.png);
+}
+img.tumblr{
+	background-image: url(img/tumblr.png);
+}
+img.skype{
+	background-image: url(img/skype.png);
+}		
+
+#social ul#code{			/* -------------------------------------------Social Code List*/
+	clear:right;
+	float:right;
+	list-style-type: none;
+	margin-right: 7.5em;
+	padding: 0;
+}
+
+#social ul#code a{ 
+	text-decoration: none;
+	color: #666;
+	font-family: "Georgia", Serif;  
+	font-weight: normal;
+  	font-style: italic;
+}
+
+#social ul#code a:hover{
+	color: #999;
+}
+
+section#left{				/* -------------------------------------------Section Left*/
+	border:1px solid red;
+	height:500px;
+	width:49%;
+	float:left;
+	margin-bottom: 2em;
+}
+section#right{				/* -------------------------------------------Section Right*/
+	border:1px solid red;
+	height:500px;
+	width:49%;
+	float:right;
+	margin-bottom: 2em;
+}
+
+footer#mainFooter{			/* -------------------------------------------Main Footer*/
+	clear:both;
+	height:300px;
+	background: #666;
+	margin: 0 -1em;
+}
+
+										/* -------------------------------------------Media Queries*/
+@media screen and (max-width:814px){
+	#idCard{
+		float:none;
+		width: 100%;
+	}
+	#social{
+		float:none;
+		width: 100%;
+	}
+	#social ul#icons{
+		clear:none;
+		float:left;
+	}
+	#social ul#code{
+		clear:none;
+		float:left;
+		margin-right: 0;
+		margin-left: 2em;
+	}
+	#idPic{
+    	margin-bottom: 0;
+	}
+}
+@media screen and (max-width:624px){
+	section#left{
+		float:none;
+		width:100%;
+	}
+	section#right{
+		float:none;
+		width:100%;
+	}
+}
+
+@media screen and (max-width:505px){
+	#social ul#code{
+		margin-left: 0;
+		text-align: center;
+		width:100%;
+	}
+	#social ul#icons{
+		float:none;
+		display:block;
+		margin-bottom: 0;
+	}
+	#idPic{
+    	height:13.75em;
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	float:none;
+	}
+	body{
+		text-align: center;
+	}
+}
