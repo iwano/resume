@@ -136,7 +136,7 @@ footer#mainFooter{			/* -------------------------------------------Main Footer*/
 	margin: 0 -1em;
 }
 
-										/* -------------------------------------------Media Queries*/
+										/**************--------------------------------Media Queries-----**********************************/
 @media screen and (max-width:814px){
 	#idCard{
 		float:none;
