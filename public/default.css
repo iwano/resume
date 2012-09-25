@@ -26,6 +26,12 @@ header#mainHeader{	/* -------------------------------------------MainHeader*/
 	color:#006fb5;
 	font-size: 2em;
 	margin: 0;
+	display:inline;
+}
+
+#mainHeader h2:hover{
+	color:white;
+	background: #006fb5;
 }
 
 #mainHeader h3{
@@ -49,6 +55,11 @@ header#mainHeader{	/* -------------------------------------------MainHeader*/
     margin-right: 1.5em;
     margin-bottom: 2em;
 }
+#idPic:hover{
+    -webkit-transform:scale(1.05) rotate(-4deg);;
+    -moz-transform:scale(1.05) rotate(-4deg);;
+    transform:scale(1.05) rotate(-4deg);;
+  }
 
 #social{
 	float:right;
@@ -58,6 +69,7 @@ header#mainHeader{	/* -------------------------------------------MainHeader*/
 	float: right; 			/* -------------------------------------------Social Icons*/
 	display:inline;
 	padding: 0;
+	margin-bottom: 0;
 }
 
 #social ul#icons li{
@@ -98,7 +110,7 @@ img.skype{
 	clear:right;
 	float:right;
 	list-style-type: none;
-	margin-right: 7.5em;
+	margin-right: 6.8em;
 	padding: 0;
 }
 
@@ -108,22 +120,20 @@ img.skype{
 	font-family: "Georgia", Serif;  
 	font-weight: normal;
   	font-style: italic;
+  	padding: 0 .3em 0 .3em;
 }
 
 #social ul#code a:hover{
-	color: #999;
+	color: white;
+	background:#999;
 }
 
 section#left{				/* -------------------------------------------Section Left*/
-	border:1px solid red;
-	height:500px;
 	width:49%;
 	float:left;
 	margin-bottom: 2em;
 }
 section#right{				/* -------------------------------------------Section Right*/
-	border:1px solid red;
-	height:500px;
 	width:49%;
 	float:right;
 	margin-bottom: 2em;
@@ -131,11 +141,131 @@ section#right{				/* -------------------------------------------Section Right*/
 
 footer#mainFooter{			/* -------------------------------------------Main Footer*/
 	clear:both;
-	height:300px;
+	height:200px;
 	background: #666;
 	margin: 0 -1em;
 }
 
+section h3{
+	color:white;
+	font-size: 1.7em;
+	width:100%;
+	background:#006fb5;
+}
+
+section ul{					/* -------------------------------------------Section Lists (Hobbies & Interests)*/
+	list-style-type: none;
+    margin: 0;
+}
+
+section ul li {
+    float: left;
+    margin: 0 .4em .4em 0;
+    font-size: 90%;
+    background: #b3b3b3;
+    padding: 4px;
+    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+section ul li:hover {
+	background: #ddd;
+}
+
+#personalInfo{					/* -------------------------------------------Personal Info*/
+	display: inline-block;
+	width:100%;
+}
+#personalInfo dl{
+	margin-left: 2em;
+}
+#personalInfo dt{
+	background: #888;
+	color:white;
+	font-weight: bold;
+	padding:.2em;
+}
+
+#skills{						/* -------------------------------------------Skills*/
+	display: block;
+}
+#skills dl{
+	margin-left: 2em;
+}
+.graph{							/* -------------------------------------------Skills graphs*/
+	border:1px solid #666;
+	height: .8em;
+	width:8em;
+	opacity: .7;
+}
+.graph:hover{
+	border:1px solid red;
+	opacity:1;
+}
+.bar{
+	height: .8em;
+}
+.ror{
+	width:60%;
+	background:pink;
+}
+.js{
+	width:70%;
+	background:green;
+}
+.c{
+	width:80%;
+	background:blue;
+}
+.net{
+	width:80%;
+	background:orange;
+}
+.php{
+	width:60%;
+	background:brown;
+}
+.java{
+	width:60%;
+	background:yellow;
+}
+.fifa{
+	width:100%;
+	background:red;
+}
+.cod{
+	width:100%;
+	background:red;
+}
+dl dt {
+  color: #555;
+}
+
+dl dd {
+    margin: 0 0 10px 10px;
+}
+
+dl dd{
+  color: #666;
+  float: left;
+}    
+
+dl dt{
+  float: left;
+  clear: left;
+  width: 70px;
+}​
+
+#interests{						/* -------------------------------------------Interests*/
+	display: block;
+}
+
+#hobbies{						/* -------------------------------------------Hobbies*/
+	display: inline-block;
+	width:100%;
+}
 										/**************--------------------------------Media Queries-----**********************************/
 @media screen and (max-width:814px){
 	#idCard{
@@ -169,6 +299,9 @@ footer#mainFooter{			/* -------------------------------------------Main Footer*/
 		float:none;
 		width:100%;
 	}
+	#interests{
+		display: inline-block;
+	}
 }
 
 @media screen and (max-width:505px){
@@ -180,7 +313,6 @@ footer#mainFooter{			/* -------------------------------------------Main Footer*/
 	#social ul#icons{
 		float:none;
 		display:block;
-		margin-bottom: 0;
 	}
 	#idPic{
     	height:13.75em;
@@ -191,5 +323,8 @@ footer#mainFooter{			/* -------------------------------------------Main Footer*/
 	}
 	body{
 		text-align: center;
+	}
+	#main{
+		width: 80%;
 	}
 }
