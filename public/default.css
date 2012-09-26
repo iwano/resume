@@ -3,7 +3,7 @@
 body{				/* -------------------------------------------Body*/
 	background: #6498B2;
 	margin:.5em;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'lucida grande', Helvetica, Arial, sans-serif;
 }
 
 #main{				/* -------------------------------------------Main*/
@@ -153,7 +153,9 @@ section h3{
 	color:white;
 	font-size: 1.7em;
 	width:100%;
+	padding:.1em 0 .1em .1em;
 	background:#444;
+	font-family:'Oxygen Mono', sans-serif; 
 }
 
 section#right ul{					/* -------------------------------------------Section Lists (Hobbies & Interests)*/
@@ -404,5 +406,9 @@ dl dt{
 	#education dd{
 		width:100%;
 		margin:0 auto;
+	}
+	#experience ul{
+		list-style-type: none;
+		padding: 0 1em 0 1em;
 	}
 }
