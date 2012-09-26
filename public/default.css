@@ -113,7 +113,7 @@ img.skype{
 	clear:right;
 	float:right;
 	list-style-type: none;
-	margin-right: 6.8em;
+	margin-right: 8em;
 	padding: 0;
 }
 
@@ -129,6 +129,12 @@ img.skype{
 #social ul#code a:hover{
 	color: white;
 	background:#705C54;
+}
+
+#social #share{				/* -------------------------------------------Section share*/
+	clear:both;
+	float:right;
+	list-style-type: none;
 }
 
 section#left{				/* -------------------------------------------Section Left*/
@@ -204,10 +210,19 @@ section#right ul li:hover {
 }
 
 #experience a{					/* -------------------------------------------Experience*/
-
+	text-decoration: none;
+	color:white;
+	background:#7D7682;
+	padding:.5em;
+	display: inline-block;
+	border:1px solid #6A676B;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-top: 1em;
 }
 #experience a:hover{
-
+	background:#9A92A1;
 }
 #experience ul{
 	list-style-type: none;
@@ -262,23 +277,23 @@ section#right ul li:hover {
 }
 .ror{
 	width:60%;
-	background:pink;
+	background:#E08DD5;
 }
 .js{
 	width:70%;
-	background:green;
+	background:#06BF00;
 }
 .c{
 	width:80%;
-	background:blue;
+	background:#006CBF;
 }
 .net{
 	width:80%;
-	background:orange;
+	background:#FF7E00;
 }
 .php{
 	width:60%;
-	background:brown;
+	background:#6B351E;
 }
 .java{
 	width:60%;
@@ -286,11 +301,11 @@ section#right ul li:hover {
 }
 .fifa{
 	width:100%;
-	background:red;
+	background:#DE2118;
 }
 .cod{
 	width:100%;
-	background:red;
+	background:#DE2118;
 }
 .check{
 	opacity:0.6;

@@ -7,6 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="stylesheet" href="default.css" />
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Oxygen+Mono' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="accordian.pack.js"></script>
   <script type="text/javascript">
@@ -19,41 +20,53 @@
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
+
+	  (function() {
+    	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    	po.src = 'https://apis.google.com/js/plusone.js';
+    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  	  })();
   </script>
   <style type="text/css">
   	#basic-accordian{
-	width:100%;
-	z-index:2;
-}
+		width:100%;
+		z-index:2;
+	}
 
-.accordion_headings{
-	padding:0.3125em;
-	background:#6498B2;
-	font-size: 1.3em;
-	font-weight: bold;
-	color:#FFFFFF;
-	border:1px solid #FFF;
-	cursor:pointer;
-}
+	.accordion_headings{
+		padding:0.3125em;
+		background:#6498B2;
+		font-size: 1.3em;
+		font-weight: bold;
+		color:#FFFFFF;
+		border:1px solid #FFF;
+		cursor:pointer;
+	}
 
-.accordion_headings:hover{
-	background:#4CC7FF;
-}
+	.accordion_headings:hover{
+		background:#47B4E0;
+	}
 
-.accordion_child{
-	padding:15px;
-	background:#EEE;
-}
+	.accordion_child{
+		padding:15px;
+		background:#EEE;
+	}
 
-.header_highlight{
-	background:#4CC7FF;
-}
-
+	.header_highlight{
+		background:#47B4E0;
+	}
   </style>
 
 </head>
 <body onload="new Accordian('basic-accordian',5,'header_highlight');">
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=295715857180607";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div id='main'>
 	<header id='mainHeader'>
 		<div id='idCard'>
@@ -76,6 +89,10 @@
     				<li><a href='http://coderwall.com/iwano' class='code cw'>coderwall</a></li>
     				<li><a href='http://www.codeschool.com/users/iwano' class='code cs'>code school</a></li>
     				<li><a href='http://www.codecademy.com/users/4f14b8df1e06b0000100fc33' class='code cc'>codecademy</a></li>
+    			</ul>
+    			<ul id='share'>
+    				<li><div class="g-plusone"></div></li>
+    				<li><div class="fb-like" data-href="http://iwano.me" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div></li>
     			</ul>
     		</div><!-- End #social-->
 	</header><!-- end header#mainHeader-->
@@ -103,7 +120,7 @@
 					  
 					  	<!--This DIV is for inline styling like padding...-->
 					    <div class="accordion_child">
-					    	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc ligula nisl, egestas non, pharetra vel, scelerisque accumsan, lacus. Proin nibh. Aenean dapibus. Quisque facilisis, ligula ut blandit hendrerit, purus neque rhoncus ipsum, sit amet ultrices mauris augue non arcu. Donec et sem nec libero viverra accumsan.<br /><br /> Quisque facilisis, ligula ut blandit hendrerit, purus neque rhoncus ipsum, sit amet ultrices mauris augue non arcu. Donec et sem nec libero viverra accumsan.<a href='https://botanax.herokuapp.com'>Launch App</a>
+					    	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc ligula nisl, egestas non, pharetra vel, scelerisque accumsan, lacus. Proin nibh. Aenean dapibus. Quisque facilisis, ligula ut blandit hendrerit, purus neque rhoncus ipsum, sit amet ultrices mauris augue non arcu. Donec et sem nec libero viverra accumsan.<br /><br /> Quisque facilisis, ligula ut blandit hendrerit, purus neque rhoncus ipsum, sit amet ultrices mauris augue non arcu. Donec et sem nec libero viverra accumsan.<br /><a href='https://botanax.herokuapp.com'>Launch App</a>
 					    </div>
 					    
 					  </div>
@@ -119,7 +136,7 @@
 					  
 					  	<!--This DIV is for inline styling like padding...-->
 					    <div class="accordion_child">
-					    	Quisque facilisis, ligula ut blandit hendrerit, purus neque rhoncus ipsum, sit amet ultrices mauris augue non arcu. Donec et sem nec libero viverra accumsan.<a href='https://mybookmarktabs.herokuapp.com'>Launch App</a>
+					    	Quisque facilisis, ligula ut blandit hendrerit, purus neque rhoncus ipsum, sit amet ultrices mauris augue non arcu. Donec et sem nec libero viverra accumsan.<br /><a href='https://mybookmarktabs.herokuapp.com'>Launch App</a>
 					    </div>
 					    
 					  </div>
