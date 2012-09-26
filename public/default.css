@@ -1,5 +1,7 @@
+/*----v1.0 blue:#006fb5  gray:#666 personal gray:#888; */
+
 body{				/* -------------------------------------------Body*/
-	background: #006fb5;
+	background: #6498B2;
 	margin:.5em;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -20,10 +22,11 @@ header#mainHeader{	/* -------------------------------------------MainHeader*/
 #mainHeader h1{
 	font-size: 2.5em;
 	margin: 0;
+	color:#444;
 }
 
 #mainHeader h2{
-	color:#006fb5;
+	color:#47B4E0;
 	font-size: 2em;
 	margin: 0;
 	display:inline;
@@ -31,7 +34,7 @@ header#mainHeader{	/* -------------------------------------------MainHeader*/
 
 #mainHeader h2:hover{
 	color:white;
-	background: #006fb5;
+	background: #47B4E0;
 }
 
 #mainHeader h3{
@@ -56,9 +59,9 @@ header#mainHeader{	/* -------------------------------------------MainHeader*/
     margin-bottom: 2em;
 }
 #idPic:hover{
-    -webkit-transform:scale(1.05) rotate(-4deg);;
-    -moz-transform:scale(1.05) rotate(-4deg);;
-    transform:scale(1.05) rotate(-4deg);;
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    transform:scale(1.05);
   }
 
 #social{
@@ -77,8 +80,8 @@ header#mainHeader{	/* -------------------------------------------MainHeader*/
 }
 #social ul#icons li img{
  	background-position: center top;
- 	height:28px;
- 	width:28px;
+ 	height:1.75em;
+ 	width:1.75em;
  	border:none;
 }
 #social ul#icons li img:hover{
@@ -116,7 +119,7 @@ img.skype{
 
 #social ul#code a{ 
 	text-decoration: none;
-	color: #666;
+	color: #705C54;
 	font-family: "Georgia", Serif;  
 	font-weight: normal;
   	font-style: italic;
@@ -125,7 +128,7 @@ img.skype{
 
 #social ul#code a:hover{
 	color: white;
-	background:#999;
+	background:#705C54;
 }
 
 section#left{				/* -------------------------------------------Section Left*/
@@ -142,7 +145,7 @@ section#right{				/* -------------------------------------------Section Right*/
 footer#mainFooter{			/* -------------------------------------------Main Footer*/
 	clear:both;
 	height:200px;
-	background: #666;
+	background: #444;
 	margin: 0 -1em;
 }
 
@@ -150,28 +153,74 @@ section h3{
 	color:white;
 	font-size: 1.7em;
 	width:100%;
-	background:#006fb5;
+	background:#444;
 }
 
-section ul{					/* -------------------------------------------Section Lists (Hobbies & Interests)*/
+section#right ul{					/* -------------------------------------------Section Lists (Hobbies & Interests)*/
 	list-style-type: none;
     margin: 0;
 }
 
-section ul li {
+section#right ul li {
     float: left;
     margin: 0 .4em .4em 0;
     font-size: 90%;
     background: #b3b3b3;
     padding: 4px;
+    color:#444;
     
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
 }
 
-section ul li:hover {
+section#right ul li:hover {
 	background: #ddd;
+}
+
+#education{						/* -------------------------------------------Education*/
+	display: inline-block;
+	width:100%;
+}
+.eduIcon{
+	height:3em;
+}
+.eduIcon:hover{
+    -webkit-transform:scale(1.10);
+    -moz-transform:scale(1.10);
+    transform:scale(1.10);
+  }
+#education dt{
+	width: 3em;
+	text-align: center
+}
+#education dd{
+	margin:.5em .3em;
+	color:#7D7682;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#experience a{					/* -------------------------------------------Experience*/
+	text-decoration: none;
+	background:#6498B2;
+	color:white;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: .4em .6em;
+	display: block;
+}
+#experience a:hover{
+	background: #7D7682;
+	color:white;
+}
+#experience ul{
+	list-style-type: none;
+	padding: 0 2em 0 0;
+}
+#experience ul li{
+	margin:.3em 0;
+	overflow: hidden;
 }
 
 #personalInfo{					/* -------------------------------------------Personal Info*/
@@ -182,10 +231,19 @@ section ul li:hover {
 	margin-left: 2em;
 }
 #personalInfo dt{
-	background: #888;
+	background: #6498B2;
 	color:white;
 	font-weight: bold;
 	padding:.2em;
+	width:4.4em;
+}
+#personalInfo dt:hover{
+	background: #7D7682;
+}
+#personalInfo dd{
+	margin: 0 0 .6em .5em;
+	color:#7D7682;
+	font-style: italic;
 }
 
 #skills{						/* -------------------------------------------Skills*/
@@ -196,16 +254,16 @@ section ul li:hover {
 }
 .graph{							/* -------------------------------------------Skills graphs*/
 	border:1px solid #666;
-	height: .8em;
+	height: .6em;
 	width:8em;
 	opacity: .7;
 }
 .graph:hover{
-	border:1px solid red;
+	border:1px solid #333;
 	opacity:1;
 }
 .bar{
-	height: .8em;
+	height: .6em;
 }
 .ror{
 	width:60%;
@@ -229,7 +287,7 @@ section ul li:hover {
 }
 .java{
 	width:60%;
-	background:yellow;
+	background:#FFF06F;
 }
 .fifa{
 	width:100%;
@@ -239,12 +297,23 @@ section ul li:hover {
 	width:100%;
 	background:red;
 }
+.check{
+	opacity:0.6;
+}
+.check:hover{
+	opacity:1;
+}
 dl dt {
   color: #555;
 }
 
-dl dd {
-    margin: 0 0 10px 10px;
+#skills dl dd {
+    margin: .3em 0 .5em .5em;
+}
+#skills dl dt {
+    text-align: right;
+	color:#7D7682;
+	font-weight: bold;
 }
 
 dl dd{
@@ -255,7 +324,7 @@ dl dd{
 dl dt{
   float: left;
   clear: left;
-  width: 70px;
+  width: 5em;
 }​
 
 #interests{						/* -------------------------------------------Interests*/
@@ -326,5 +395,14 @@ dl dt{
 	}
 	#main{
 		width: 80%;
+	}
+	#education dt{
+		float:none;
+		clear:none;
+		margin:0 auto;
+	}
+	#education dd{
+		width:100%;
+		margin:0 auto;
 	}
 }
