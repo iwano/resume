@@ -32,11 +32,6 @@ header#mainHeader{	/* -------------------------------------------MainHeader*/
 	display:inline;
 }
 
-#mainHeader h2:hover{
-	color:white;
-	background: #47B4E0;
-}
-
 #mainHeader h3{
 	font-family: "Georgia", Serif;      
   	font-weight: normal;
@@ -58,12 +53,6 @@ header#mainHeader{	/* -------------------------------------------MainHeader*/
     margin-right: 1.5em;
     margin-bottom: 2em;
 }
-#idPic:hover{
-    -webkit-transform:scale(1.05);
-    -moz-transform:scale(1.05);
-    transform:scale(1.05);
-  }
-
 #social{
 	float:right;
 }
@@ -135,6 +124,7 @@ img.skype{
 	clear:both;
 	float:right;
 	list-style-type: none;
+	margin:0;
 }
 
 section#left{				/* -------------------------------------------Section Left*/
@@ -164,12 +154,12 @@ section h3{
 	font-family:'Oxygen Mono', sans-serif; 
 }
 
-section#right ul{					/* -------------------------------------------Section Lists (Hobbies & Interests)*/
+section#right ul.topic{					/* -------------------------------------------Section Lists (Hobbies & Interests)*/
 	list-style-type: none;
     margin: 0;
 }
 
-section#right ul li {
+section#right ul.topic li {
     float: left;
     margin: 0 .4em .4em 0;
     font-size: 90%;
@@ -182,7 +172,7 @@ section#right ul li {
     border-radius: 3px;
 }
 
-section#right ul li:hover {
+section#right ul.topic li:hover {
 	background: #ddd;
 }
 
@@ -209,7 +199,7 @@ section#right ul li:hover {
 	font-size: 1.2em;
 }
 
-#experience a{					/* -------------------------------------------Experience*/
+#experience a.btn{					/* -------------------------------------------Experience*/
 	text-decoration: none;
 	color:white;
 	background:#7D7682;
@@ -247,9 +237,7 @@ section#right ul li:hover {
 	padding:.2em;
 	width:4.4em;
 }
-#personalInfo dt:hover{
-	background: #7D7682;
-}
+
 #personalInfo dd{
 	margin: 0 0 .6em .5em;
 	color:#7D7682;
@@ -345,6 +333,24 @@ dl dt{
 	display: inline-block;
 	width:100%;
 }
+
+#os{
+	clear: both;
+	display: block;
+}
+#os img{
+	height:5em;
+}
+#os ul{
+	padding-left: 0;
+	list-style-type: none;
+}
+#os ul li{
+	float: right;
+	padding: 0;
+	margin: 1em 1em 0 0;
+
+}
 										/**************--------------------------------Media Queries-----**********************************/
 @media screen and (max-width:814px){
 	#idCard{
@@ -414,5 +420,8 @@ dl dt{
 	#education dd{
 		width:100%;
 		margin:0 auto;
+	}
+	#os ul{
+		display:inline-block;
 	}
 }
