@@ -33,7 +33,7 @@ header#mainHeader{	/* -------------------------------------------MainHeader*/
 }
 
 #mainHeader h3{
-	font-family: "Georgia", Serif;      
+	font-family:'Oxygen Mono', sans-serif;       
   	font-weight: normal;
   	font-style: italic;
   	color: #666;
@@ -102,14 +102,14 @@ img.skype{
 	clear:right;
 	float:right;
 	list-style-type: none;
-	margin-right: 8em;
+	margin-right: 7em;
 	padding: 0;
 }
 
 #social ul#code a{ 
 	text-decoration: none;
 	color: #7D7682;
-	font-family: "Georgia", Serif;  
+	font-family:'Oxygen Mono', sans-serif;   
 	font-weight: normal;
   	font-style: italic;
   	padding: 0 .3em 0 .3em;
