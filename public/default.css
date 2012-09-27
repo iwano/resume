@@ -117,14 +117,21 @@ img.skype{
 
 #social ul#code a:hover{
 	color: white;
-	background:#705C54;
+	background:#6498B2;
 }
 
-#social #share{				/* -------------------------------------------Section share*/
+#share{				/* -------------------------------------------Section share*/
 	clear:both;
-	float:right;
 	list-style-type: none;
+
 	margin:0;
+}
+#share{
+
+}
+#share li{
+	float:right;
+	padding-right: 1em;
 }
 
 section#left{				/* -------------------------------------------Section Left*/
@@ -221,6 +228,10 @@ section#right ul.topic li:hover {
 #experience ul li{
 	margin:.3em 0;
 	overflow: hidden;
+}
+#experience p{
+	margin-top: 0;
+	margin-bottom: 8px;
 }
 
 #personalInfo{					/* -------------------------------------------Personal Info*/
@@ -423,5 +434,11 @@ dl dt{
 	}
 	#os ul{
 		display:inline-block;
+	}
+	#share{
+		float:none;
+		display: inline-block;
+		text-align: center;
+		margin:0 auto;
 	}
 }
