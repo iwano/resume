@@ -147,7 +147,7 @@ section#right{				/* -------------------------------------------Section Right*/
 
 footer#mainFooter{			/* -------------------------------------------Main Footer*/
 	clear:both;
-	height:5em;
+	height:4em;
 	background: #444;
 	margin: 0 -1em;
 }
@@ -517,5 +517,8 @@ dl dt{
 	}
 	#quotes{	
 		padding-top: 1em;
+	}
+	footer#mainFooter{
+		height:2em;
 	}
 }
