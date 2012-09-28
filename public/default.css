@@ -206,6 +206,16 @@ section#right ul.topic li:hover {
 	font-size: 1.2em;
 }
 
+#mision ul li{						/* -------------------------------------------Mision*/
+	color:#6498B2;
+	font-weight: bold;
+	margin: .5em 0 .5em 0;
+}
+#mision ul{
+	list-style-type: none;
+	padding:0 0 0 1em ;
+}
+
 #experience a{					/* -------------------------------------------Experience*/
 	color:#47B4E0;
 }
@@ -245,7 +255,7 @@ section#right ul.topic li:hover {
 	color:#444;
 }
 #experience .funFact{
-	color:#A32522;
+	color:#B24A41;
 	margin-top: .8em;
 	font-weight: bold;
 }
@@ -407,8 +417,8 @@ dl dt{
 	font-style: italic;
 }
 
-#quotes{
-	padding-top: 5em;
+#quotes{					/* -------------------------------------------Quotes*/
+	padding-top: 2em;
 }
 #quotes p.quote{
 	font-family: 'Nothing You Could Do', cursive;
@@ -493,5 +503,8 @@ dl dt{
 		display: inline-block;
 		text-align: center;
 		margin:0 auto;
+	}
+	#quotes{	
+		padding-top: 1em;
 	}
 }
