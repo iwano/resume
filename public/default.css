@@ -147,7 +147,7 @@ section#right{				/* -------------------------------------------Section Right*/
 
 footer#mainFooter{			/* -------------------------------------------Main Footer*/
 	clear:both;
-	height:100px;
+	height:5em;
 	background: #444;
 	margin: 0 -1em;
 }
@@ -427,6 +427,13 @@ dl dt{
 	text-align: center;
 }
 										/**************--------------------------------Media Queries-----**********************************/
+
+@media screen and (max-width:1078px){
+	#main{
+		width: 80%;
+	}
+}
+
 @media screen and (max-width:814px){
 	#idCard{
 		float:none;
